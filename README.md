@@ -16,7 +16,7 @@ params_keys = {
     'api_secret': os.getenv('nexmo_api_secret')
 }
 
-1- Search Number (Search_Number.py)
+1- Search Numbers (Search_Numbers.py)
 
 - Upatde the settings to suit your needs
 - numberOfWantedNumbers => indicates the number of phone numbers you're looking for
@@ -33,9 +33,9 @@ params_global = {
     'features': 'SMS',
 }
 
-- Run the script: python Search_Number.py
+- Run the script: python Search_Numbers.py
 
-2- Rent Number (Rent_Numbers.py)
+2- Rent Numbers (Rent_Numbers.py)
 
 - Upatde the settings to suit your needs
 - numberOfWantedNumbers => indicates the number of phone numbers you're looking for
