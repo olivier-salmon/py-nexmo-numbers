@@ -1,4 +1,4 @@
-# python-number
+# Searching and renting Nexmo's numbers
 Use the Nexmo's API to check phone numbers availability or rent them 
 
 # Pre-requisites
