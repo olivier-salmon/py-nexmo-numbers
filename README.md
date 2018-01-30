@@ -43,10 +43,10 @@ params_global = {
 ## 2- Rent Numbers (Rent_Numbers.py)
 
 * Upatde the settings to suit your needs
-* numberOfWantedNumbers => indicates the number of phone numbers you're looking for
-* amountOfSequentialNumbers => indicates how many sequential phone numbers you want 
-* country => single value, must be using the ISO 2 country code
-* feature => the phone number feature. SMS, VOICE, VOICE,SMS
+* `numberOfWantedNumbers` => indicates the number of phone numbers you're looking for
+* `amountOfSequentialNumbers` => indicates how many sequential phone numbers you want 
+* `country` => single value, must be using the ISO 2 country code
+* `feature` => the phone number feature. SMS, VOICE, VOICE,SMS
 
 ```python
 numberOfWantedNumbers = 10
