@@ -1,13 +1,11 @@
 # python-number
 Use the Nexmo's API to check phone numbers availability or rent them 
 
-# H1 Pre-requisites
-- open a Nexmo account
-- make sure to top up your account with enough found to buy the numbers
-- Python 3
-- Optional: set up OS variable environment with your Nexmo API key and secret
-
-Use
+# Pre-requisites
+..* open a Nexmo account
+..* make sure to top up your account with enough found to buy the numbers
+..* Python 3
+..* Optional: set up OS variable environment with your Nexmo API key and secret
 
 If you haven't set environment variables, replace os.getenv('nexmo_api_key') and os.getenv('nexmo_api_secret') with your API key and secret.
 
@@ -18,9 +16,9 @@ params_keys = {
 }
 ```
 
-# H1 Use
+# Use
 
-# H2 1- Search Numbers (Search_Numbers.py)
+# 1- Search Numbers (Search_Numbers.py)
 
 ...* Upatde the settings to suit your needs
 ...* numberOfWantedNumbers => indicates the number of phone numbers you're looking for
@@ -41,7 +39,7 @@ params_global = {
 
 ..* Run the script: python Search_Numbers.py
 
-# H2 2- Rent Numbers (Rent_Numbers.py)
+# 2- Rent Numbers (Rent_Numbers.py)
 
 ..* Upatde the settings to suit your needs
 ..* numberOfWantedNumbers => indicates the number of phone numbers you're looking for
