@@ -7,7 +7,7 @@
 ############################################################
 
 import requests
-import csv, sys, getopt, datetime, time, math
+import csv, sys, getopt, datetime, time, math, os
 
 
 
@@ -16,13 +16,10 @@ import csv, sys, getopt, datetime, time, math
 ############
 
 ### API KEY ###
-
-# If you have a python file named APIkeys.py with your API key and secret
-from APIkeys import *
-#if not use the below
-#params_keys = {
-#    'api_key': '55ae477d',
-#    'api_secret': '7feb3fb1084f8c85'
+params_keys = {
+    'api_key': os.getenv('nexmo_api_key'),
+    'api_secret': os.getenv('nexmo_api_secret')
+}
 #}
 
 ### GLOBAL PARAMETERS ###
