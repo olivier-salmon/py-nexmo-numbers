@@ -28,7 +28,7 @@ amountOfSequentialsNumbers = 0
 params_global = {
     'country': 'GB',
     # Possible values for features: SMS - VOICE - VOICE,SMS
-    'features': 'SMS',
+    'features': 'SMS'
 }
 
 numberList = []
