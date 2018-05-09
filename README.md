@@ -61,3 +61,46 @@ params_global = {
 
 * Uncomment line 85: `#buyNumbers(country,msisdn)`
 * Run the script: `python Rent_Numbers.py`
+
+## 3- Search Owned Numbers (Search_Owned_Numbers.py)
+
+* Upatde the settings to suit your needs
+* `page_size` => indicates the number of phone numbers you want to display per page (max 100)
+* `pattern` => indicates a pattern to search for. Use it to search number you own in a specific country 
+* `search_pattern` => Strategy for matching pattern. Expected values: 0 (starts with, default), 1 (anywhere), 2 (ends with).
+
+```python
+page_size = 10          # default 10, max 100
+pattern = ''            # A matching pattern (not required)
+search_pattern = ''     # Strategy for matching pattern. Expected values: 0 (starts with, default), 1 (anywhere), 2 (ends with). (not required)
+```
+
+* Run the script: `python Search_Owned_Numbers.py`
+
+## 4- Update Owned Numbers (Update_Owned_Numbers.py)
+
+* Upatde the settings to suit your needs
+* `page_size` => indicates the number of phone numbers you want to display per page (max 100)
+* `pattern` => indicates a pattern to search for. Use it to update number(s) you own in a specific country 
+* `search_pattern` => Strategy for matching pattern. Expected values: 0 (starts with, default), 1 (anywhere), 2 (ends with).
+* `moHttpUrl` => An URL encoded URI to the webhook endpoint that handles inbound messages. Your webhook endpoint must be active before you make this request, Nexmo makes a GET request to your endpoint and checks that it returns a 200 OK response. Set to empty string to clear.
+* `moSmppSysType` => The associated system type for your SMPP client. For example inbound
+* `voiceCallbackValue has to be used together with voiceCallbackType parameter`
+* `voiceCallbackType` => The voice webhook type. Possible values are sip, tel, or app
+* `voiceCallbackValue` => A SIP URI, telephone number or Application ID
+* `voiceStatusCallback` => A webhook URI for Nexmo to send a request to when a call ends.
+
+```python
+page_size = 5                # default 10, max 100
+pattern = ''                 # A matching pattern (not required)
+search_pattern = ''         # Strategy for matching pattern. Expected values: 0 (starts with, default), 1 (anywhere), 2 (ends with). (not required)
+
+moHttpUrl = ''                  # moHttpUrl: An URL encoded URI to the webhook endpoint that handles inbound messages. Your webhook endpoint must be active before you make this request, Nexmo makes a GET request to your endpoint and checks that it returns a 200 OK response. Set to empty string to clear.
+moSmppSysType = ''       # moSmppSysType: The associated system type for your SMPP client. For example inbound
+# voiceCallbackValue has to be used together with voiceCallbackType parameter.
+voiceCallbackType = ''    # voiceCallbackType: The voice webhook type. Possible values are sip, tel, or app
+voiceCallbackValue = ''   # voiceCallbackValue: A SIP URI, telephone number or Application ID
+voiceStatusCallback = ''   # voiceStatusCallback: A webhook URI for Nexmo to send a request to when a call ends.
+```
+
+* Run the script: `python Update_Owned_Numbers.py`
