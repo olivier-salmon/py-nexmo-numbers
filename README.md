@@ -122,3 +122,16 @@ search_pattern = '0'         # Strategy for matching pattern. Expected values: 0
 ```
 
 * Run the script: `python Cancel_Owned_Numbers.py`
+
+Example: 
+```console
+python Cancel_Owned_Numbers.py
+Cancelling {'country': 'ES', 'msisdn': '34911067079', 'moHttpUrl': 'http://madrid.nexmodemo.com/inbound', 'type': 'landline', 'metadata': [], 'features': ['SMS']}
+Country ES, MSISDN 34911067079
+{'api_secret': 'eab57dd40c2fd511', 'msisdn': '34911067079', 'api_key': '89345951', 'country': 'ES'}
+200-success
+Cancelling {'country': 'ES', 'msisdn': '34911067271', 'moHttpUrl': 'http://madrid.nexmodemo.com/contests', 'type': 'landline', 'metadata': [], 'features': ['SMS']}
+Country ES, MSISDN 34911067271
+{'api_secret': 'eab57dd40c2fd511', 'msisdn': '34911067271', 'api_key': '89345951', 'country': 'ES'}
+200-success
+```
