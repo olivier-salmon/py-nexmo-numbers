@@ -104,3 +104,21 @@ voiceStatusCallback = ''   # voiceStatusCallback: A webhook URI for Nexmo to sen
 ```
 
 * Run the script: `python Update_Owned_Numbers.py`
+
+## 5- Cancel Owned Numbers (Cancel_Owned_Numbers.py)
+
+* Upatde the settings to suit your needs
+* `page_size` => indicates the number of phone numbers you want to display per page (max 100)
+* `pattern` => indicates a pattern to search for. Use it to cancel number(s) you own in a specific country 
+* `search_pattern` => Strategy for matching pattern. Expected values: 0 (starts with, default), 1 (anywhere), 2 (ends with).
+
+BE CAREFULL WITH THE pattern and seach_pattern parameter as it will cancel ALL PHONE NUMBERS YOU OWN THAT MATCHES the pattern criteria. In the code it's set to cancel all Spanish Numbers.
+
+```python
+page_size = 5                # default 10, max 100
+pattern = '34'                 # A matching pattern (not required)
+search_pattern = '0'         # Strategy for matching pattern. Expected values: 0 (starts with, default), 1 (anywhere), 2 (ends with). (not required)
+
+```
+
+* Run the script: `python Cancel_Owned_Numbers.py`
